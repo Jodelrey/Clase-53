@@ -1,9 +1,9 @@
+//Encontrar el numero mayor
 const numeros = [2, 5, 7, 12, 3, 45, 28, 33, 109, 14, 6]
-
 const aNumeroMayor = (mayor, numero) =>  numero > mayor ? numero : mayor
-
 numeros.reduce(aNumeroMayor)
 
+//Encontrar la persona con mas dinero
 const personas = [
     {
         nombre: 'Juan',
@@ -18,7 +18,7 @@ const personas = [
         dinero: 889
     }
 ]
-const aPersonaConMasDinero = (personaConMasDinero, persona) => persona.dinero > personaConMasDinero ? persona.dinero : personaConMasDinero 
+const aPersonaConMasDinero = (personaConMasDinero, persona) => persona.dinero > personaConMasDinero.dinero ? persona : personaConMasDinero 
 
 persona.reduce(aPersonaConMasDinero)
 
